@@ -1,0 +1,20 @@
+/* works_stylesheet */
+
+html {
+  font-family: helvetica
+}
+span {
+  color: white;
+}
+
+h1 {
+  font-size: 30px;
+  background-color: #DBE2DB;
+  background-height: 40px;
+}
+
+h2 {
+  font-size: 18px;
+  background-color: #424442;
+  background-size: height = 40px;
+}
