@@ -11,8 +11,10 @@
     <div>Film</div>
     <div>Commercial</div>
     <div>Web</div>
+    <br>
     <% @works.each do |work| %>
       <div>Vimeo URL: <%= work.url %></div>
+      <div>name:<%= work.name %></div>
     <% end %>
   </div>
 </body>
