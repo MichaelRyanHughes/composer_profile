@@ -1,18 +1,19 @@
 <!doctype HTML>
 <html>
-<link rel="stylesheet" type="text/css" href="works_stylesheet.css">
-
-<div id="container">
-  
-  <body>
-    
+<head>
+  <link rel="stylesheet" type="text/css" href="works_stylesheet.css">
+</head>
+<body>
+  <div id="container">
     <h1><span>Michael Hughes</span></h1>
     <h2><span>Composer</span></h2>
     <a href="mailto:michaelryanhughes@gmail.com"><h3>Contact</h3></a>
     <div>Film</div>
     <div>Commercial</div>
     <div>Web</div>
-  
-  </body>
-</div>
+    <% @works.each do |work| %>
+      <div>Vimeo URL: <%= work.url %></div>
+    <% end %>
+  </div>
+</body>
 </html>
