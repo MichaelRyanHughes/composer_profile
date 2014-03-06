@@ -13,8 +13,9 @@
     <div>Web</div>
     <br>
     <% @works.each do |work| %>
-      <div>Vimeo URL: <%= work.url %></div>
-      <div>name:<%= work.name %></div>
+      <div>Title:  <%= work.name %></div>
+      <div>Vimeo URL:  <%= work.url %></div>
+      <br></br>
     <% end %>
   </div>
 </body>

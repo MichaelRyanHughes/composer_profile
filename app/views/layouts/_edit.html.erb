@@ -1,0 +1,8 @@
+<div><strong>'Partial for EDIT WORK Form'</strong></div>
+<%= form_for Work.new do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br />
+  <%= f.label :url %>
+  <%= f.text_field :url %><br />
+  <%= f.submit %>
+<% end %>
