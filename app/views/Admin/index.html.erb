@@ -1,9 +1,17 @@
 <!doctype HTML>
 <html>
   <body>
-    <h1>Admin Page</h1> 
-    <br>
-     <% @works.each do |work| %>
+    <h1>Admin Page</h1>
+    <div>
+      <% if user_signed_in? %>
+        Signed in as <%= current_user.email %>
+        <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+        <% else %>
+        <%= link_to "Sign in", new_user_session_path %>
+      <% end %>
+      </div>
+      <br>
+      <% @works.each do |work| %>
       <div><b>Title:</b>  <%= work.name %></div>
       <div><b>Vimeo URL:</b>  <%= work.url %></div>
       <div><b>Id:</b>  <%= work.id %></div>
