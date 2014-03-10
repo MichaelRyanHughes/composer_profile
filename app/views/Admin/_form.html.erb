@@ -1,7 +1,16 @@
-<%= form_for @work do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %><br />
-  <%= f.label :url %>
-  <%= f.text_field :url %><br />
-  <%= f.submit %>
-<% end %>
+<!doctype HTML>
+<html>
+  <body>
+    <div id="form">
+      <%= form_for @work do |f| %>
+        <%= f.label :Title %>
+        <%= f.text_field :name %><br />
+        <%= f.label(:vimeo_id,"Vimeo Id") %> 
+        <%= f.text_field :vimeo_id %><br />
+        <%= f.label :url %>
+        <%= f.text_field :url %><br />
+        <%= f.submit %>
+      <% end %>
+    </div>
+  </body>
+</html>

@@ -2,6 +2,7 @@ ComposerProfile::Application.routes.draw do
 
   
   root to: "works#index"
+  get 'composer', to: 'composer#index'
 
   devise_for :users#, :skip => [:registrations]
   #as :user do

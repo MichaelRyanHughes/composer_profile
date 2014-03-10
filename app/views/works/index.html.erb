@@ -1,22 +1,28 @@
 <!doctype HTML>
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="works_stylesheet.css">
-</head>
-<body>
-  <div id="container">
-    <h1><span>Michael Hughes</span></h1>
-    <h2><span>Composer</span></h2>
-    <a href="mailto:michaelryanhughes@gmail.com"><h3>Contact</h3></a>
-    <div>Film</div>
-    <div>Commercial</div>
-    <div>Web</div>
-    <br>
-    <% @works.each do |work| %>
-      <div>Title:  <%= work.name %></div>
-      <div>Vimeo URL:  <%= work.url %></div>
-      <br></br>
-    <% end %>
-  </div>
-</body>
+  <head>
+    <link rel="stylesheet" type="text/css/scss" href="works_stylesheet.css.scss">
+  </head>
+  <body>
+    <div class="header">
+      <div class="name">
+        <h1>michael hughes</h1>
+      </div>
+      <div class ="title">
+        <h2><%=link_to 'composer', composer_path %></h2>
+      </div>
+      <div class="contact">
+        <a href="mailto:michaelryanhughes@gmail.com"><h2>contact</h2></a>
+      </div>
+      <div class="bar"> </div>
+    </div>
+      <div class = "grid">
+        <% @works.each do |work| %>
+          <div class="thumbnails">
+            <div class = "titles"><p><%= work.name %></p></div>
+            <embed class="videos" src="//player.vimeo.com/video/<%= work.vimeo_id %>?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="  350" height="263  " frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></embed>
+          </div>
+        <% end %>
+      </div>
+  </body>
 </html>

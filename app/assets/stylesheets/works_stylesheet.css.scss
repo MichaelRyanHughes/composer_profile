@@ -1,0 +1,119 @@
+/* works_stylesheet */
+
+html {
+  font-family: helvetica;
+  font-weight: lighter;
+}
+
+/* Header */
+
+.header {
+  background-color: #171717;
+  margin-bottom: 0px;
+  padding-top: 0px;
+/*  border-top-style: solid;
+  border-top-color: #33ADFF;
+  border-top-width: 5px;*/
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.name {
+  color: white;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  padding-bottom: 40px;
+  height: 24px;
+
+}
+
+.title /* "composer" */ {
+  color: white;
+  background-color: #94FF94;
+  float: left;
+  padding: 5px;
+  height: 24px;
+}
+
+/* contact */
+.contact {
+  color: white;
+  background-color: #B8E2FF;
+  float: left;
+  padding: 5px;
+  height: 24px;
+  border-style: solid;
+  border-left-width: 4px;
+  border-top-width: 0px;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: gray;
+}
+
+.bar {
+  size: 24px, 350px;
+  background-color: orange;
+  float: right;
+  display: inline-block;
+}
+
+
+
+/* Thumbnail Grid */
+
+.grid {
+  margin-top: 50px;
+  margin-left: 13%;
+  margin-right: auto;
+  
+}
+
+.titles {
+  margin-bottom: 0px;
+  background-color: gray;
+  background-size: 20px, 350px;
+  width: 350px;
+}
+
+p {
+  margin-bottom: 0px;
+  margin-left: 5px;
+  color: white;
+  font-size: 14px;
+}
+
+.thumbnails {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  float: left;
+  width: 350px;
+  height: 279px;
+}
+
+.videos {
+  float: left;
+  margin-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+h1 {
+  font-size: 30px;
+  /* background-color: #DBE2DB; */
+  /* background-height: 40px; */
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 0px;
+  /* background-color: #DBE2DB; */
+}
