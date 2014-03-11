@@ -9,8 +9,18 @@
   <p class="alert"><%= alert %></p>
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="header">
+    <div class="name">
+      <h1>mike hughes</h1>
+    </div>
+    <div class ="title">
+      <h2><%=link_to 'composer', composer_path %></h2>
+    </div>
+    <div class="contact">
+      <a href="mailto:michaelryanhughes@gmail.com"><h2>contact</h2></a>
+    </div>
+    <div class="bar"> </div>
+  </div>
+  <%= yield %>
 </body>
 </html>
