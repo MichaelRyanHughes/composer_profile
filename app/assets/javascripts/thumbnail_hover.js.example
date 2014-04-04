@@ -1,0 +1,22 @@
+// $(document).ready(function() {
+//   $('img').mouseenter(function() {
+//     $(this).css({'filter': 'grayscale(0%)', '-webkit-filter': 'grayscale(0%)'});
+//     $(this).next().fadeIn('fast');
+//     // $(this).next().css({'visibility': 'visible'});
+//   });
+
+//   $('img').mouseleave(function() {
+//     $(this).css({'filter': 'grayscale(100%)', '-webkit-filter': 'grayscale(100%)'});
+//     $(this).next().fadeOut('fast');
+//     // $(this).next().css({'visibility': 'hidden'});
+//   });
+
+//   $('.thumbnail').mouseenter(function() {
+//     $(this).css({'background-color': '#eaeef1'});
+//   });
+
+//   $('.thumbnail').mouseleave(function() {
+//     $(this).css({'background-color': 'white'});
+//   });
+
+// });

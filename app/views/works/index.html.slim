@@ -1,0 +1,11 @@
+.grid
+  - @works.each do |work|
+    .thumbnail 
+      img src= work.vimeo_thumbnail class= "grayscale"
+        /!embed.videos src="//player.vimeo.com/video/#{work.vimeo_id}?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width=("  350") height=("263  ") frameborder="0" allowfullscreen=""   webkitallowfullscreen="" mozallowfullscreen=""
+      .title
+        p
+          = work.name
+          span &#x25C6
+        .play-button
+          | &#x25b6 
