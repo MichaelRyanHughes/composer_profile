@@ -19,16 +19,18 @@ html {
 /* Header */
 body {
   margin: 0px;
-  background-color: white;
+  background-color: #fdfdfd;
   padding-top: 1px;
   .header {
     font-family: Fairview-Regular;
     height: 100px;
     width: 100%;
-    background-color: white;
+    background-color: #fdfdfd;
     padding-bottom: 26px;
     .name {
       color: #FF4D4D;
+      transition: color 8s ease-in-out;
+      -webkit-transition: color 8s ease-in-out;
       letter-spacing: 10px;
       /* background-color: white; */
       margin-left: 3%;
@@ -39,7 +41,10 @@ body {
       padding-bottom: 0px;
       padding-top: 0px;
       border-width: 0px;
-      width: 1400px;
+      width: 550px;
+      &:hover {
+        color: #FAFAFA; 
+      }
       h1 {
         margin-bottom: 0px;
         margin-top: 0px;
@@ -59,13 +64,13 @@ body {
     font-family: arial;
     height: 30px;
     width: 100%;
-    background-color: white;
+    background-color: #fdfdfd;
     border-top-style: solid;
     border-left: none;
     border-right: none;
     border-top-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: white;
+    border-bottom-color: #fdfdfd;
     border-bottom-width: 1px;
     border-top-color: #DBDBDB;
     padding-bottom: 0px;
@@ -76,19 +81,23 @@ body {
       margin-top: 0;
       padding-top: 6px;
       padding-left: 0px;
-      font-size: 12px;
       width: 100%;
       li {
+        font-size: 12px;
         width: 15%;
+        height: 25px;
         display: inline-block;
         text-align: center;
         float: right;
         a {
           color: #AFAFAF;
+          transition: color .25s ease-in-out;
+          -webkit-transition: color .25s ease-in-out;
           text-decoration: none;
-          padding-left: 0px;
-          padding-right: 0px;
-          padding-bottom: 2px;
+          padding: 6px 10px 10px 15px;
+          background-color: #fdfdfd;
+          transition: background-color .25s ease-in-out;
+          -webkit-transition: background-color .25s ease-in-out;
           &:visited {
             color: #AFAFAF;
             text-decoration: none;
@@ -96,13 +105,13 @@ body {
           &:hover {
             color: white;
             background-color: #FF4D4D;
-            border-style: solid;
+            /*border-style: solid;
             border-color: #FF4D4D;
             border-top-width: 7px;
             border-bottom-width: 8px;
             border-left-width: 28px;
             border-right-width: 28px;
-            /*transition: border 100ms;
+            transition: border 100ms;
             -o-transition: border-bottom 100ms;
             -moz-transition: border-bottom 100ms;
             -webkit-transition: border 100ms;*/
@@ -112,6 +121,40 @@ body {
     }
   } 
 }
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 50;
+  display: none;
+}
+
+.lightbox {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  height: 400px;
+  width: 700px;
+  background-color: black;
+  border-radius: 3px;
+  z-index: 51;
+  display: none;
+}
+
+.close {
+  color: red;
+  float: right;
+  margin-right: 10px;
+  margin-top: -10px;
+  &:hover {
+    cursor: pointer;
+    color: gray;
+  }
+}
 
 /* Thumbnail Grid */
 
@@ -120,7 +163,6 @@ body {
   margin-top: 0px;
   margin-left: 9%;
 }
-
 
 .thumbnail {
   margin-top: 18px;
@@ -145,8 +187,8 @@ body {
     margin-top: -34px;
     position: relative;
     opacity: 0;
-    transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .35s ease-in-out;
+    -webkit-transition: opacity .35s ease-in-out;
     span {
       color: #FF4D4D;
       padding-top: 2px;
@@ -163,34 +205,44 @@ body {
     }
     .play-button {
       height: 16px;
-      width: 30px;
+      width: 25px;
       background-color: #eaeef1;
+      transition: background-color .25s ease-in-out;
+      -webkit-transition: background-color .25s ease-in-out;
       display: inline-block;
-      float: right;
-      border-radius: 2px;
+      float: right; 
+      border-radius: 3px;
       padding-top: 3px;
-      padding-left: 5px;
+      padding-left: 15px;
       margin-left: 5px;
       margin-right: 10px;
-      margin-top: -28px;
+      margin-top: -29px;
       font-size: 12px;
+      text-decoration: none;
       color: gray;
+      transition: color .25s ease-in-out;
+      -webkit-transition: color .25s ease-in-out;
       &:hover {
-        color: #FF4D4D;
+        color: white;
+        background-color: gray;
+        cursor: pointer;
+        &:link {
+          text-decoration: none;
+        }
       }
     }
   } 
   img.grayscale {
+    filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
-    filter: grayscale(100%);
     transition: .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;
     height: 263px;
     width: 350px;
   }
   &:hover {
-    background-color: #DBDBDB;
+    background-color: whitesmoke;
     .title {
       opacity: 1;
     }
@@ -200,8 +252,6 @@ body {
     }     
   }
 }
-
-
 
 h1 {
   font-size: 30px;
@@ -213,5 +263,14 @@ h2 {
   font-size: 18px;
   margin-top: 0px;
   /* background-color: #DBE2DB; */
+}
+
+.white-popup {
+  position: relative;
+  background: #1A1A1A;
+  padding: 20px 20px 20px 30px;
+  width:auto;
+  max-width: 710px;
+  margin: 20px auto;
 }
 
