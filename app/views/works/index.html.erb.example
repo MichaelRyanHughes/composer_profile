@@ -7,8 +7,8 @@
       <div class = "grid">
         <% @works.each do |work| %>
           <div class="thumbnails">
-            <div class = "titles"><p><%= work.name %></p></div>
             <embed class="videos" src="//player.vimeo.com/video/<%= work.vimeo_id %>?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="  350" height="263  " frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></embed>
+            <div class = "titles"><p><%= work.name %> <span>&#x25B2</span></p></div>
           </div>
         <% end %>
       </div>

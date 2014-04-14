@@ -1,0 +1,25 @@
+.background
+.lightbox
+  .close
+    p
+    | &#10005
+.grid
+  - @works.each do |work|
+    <div id="#{work.vimeo_id}" class="white-popup mfp-hide">
+      <iframe src="//player.vimeo.com/video/#{work.vimeo_id}" width="700" height="526" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      h3
+        = work.name.downcase
+        span &#x25C6
+    </div>
+    .thumbnail 
+      img src= work.vimeo_thumbnail class= "grayscale"
+      .title
+        p
+          = work.name
+          span &#x25C6
+        a.play-button href="##{work.vimeo_id}" &#x25b6
+
+
+
+/!          .play-button  
+/!          |&#x25b6 
