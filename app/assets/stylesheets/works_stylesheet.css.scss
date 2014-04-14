@@ -19,18 +19,18 @@ html {
 /* Header */
 body {
   margin: 0px;
-  background-color: #fdfdfd;
+  background-color: #DFDFDF;
   padding-top: 1px;
   .header {
     font-family: Fairview-Regular;
     height: 100px;
     width: 100%;
-    background-color: #fdfdfd;
+    background-color: #DFDFDF;
     padding-bottom: 26px;
     .name {
       color: #FF4D4D;
-      transition: color 8s ease-in-out;
-      -webkit-transition: color 8s ease-in-out;
+      transition: color .25s ease-in-out;
+      -webkit-transition: color .25s ease-in-out;
       letter-spacing: 10px;
       /* background-color: white; */
       margin-left: 3%;
@@ -91,13 +91,13 @@ body {
         float: right;
         a {
           color: #AFAFAF;
-          transition: color .25s ease-in-out;
-          -webkit-transition: color .25s ease-in-out;
+          /*transition: color .25s ease-in-out;
+          /*-webkit-transition: color .25s ease-in-out;*/
           text-decoration: none;
           padding: 6px 10px 10px 15px;
           background-color: #fdfdfd;
-          transition: background-color .25s ease-in-out;
-          -webkit-transition: background-color .25s ease-in-out;
+          /*transition: background-color .25s ease-in-out;
+          -webkit-transition: background-color .25s ease-in-out;*/
           &:visited {
             color: #AFAFAF;
             text-decoration: none;
@@ -267,10 +267,24 @@ h2 {
 
 .white-popup {
   position: relative;
-  background: #1A1A1A;
-  padding: 20px 20px 20px 30px;
-  width:auto;
-  max-width: 710px;
+  background: black;
+  padding: 10px 10px 10px 10px;
+  width: auto;
+  max-width: 700px;
   margin: 20px auto;
+  border-radius: 5px;
+  h3 {
+    font-family: Fairview-Regular;
+    font-size: 35px;
+    letter-spacing: 7px;
+    color: #BCBCBC;
+    margin: 0px 0px 0px 0px;
+    span {
+      font-family: GandhiSans-Regular;
+      font-size: 18px;
+      padding-left: 5px;
+      color: red;
+    }
+  }
 }
 
