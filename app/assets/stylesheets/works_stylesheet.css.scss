@@ -29,8 +29,8 @@ body {
     padding-bottom: 26px;
     .name {
       color: #FF4D4D;
-      transition: color .25s ease-in-out;
-      -webkit-transition: color .25s ease-in-out;
+      /*transition: color .25s ease-in-out;*/
+      /*-webkit-transition: color .25s ease-in-out;*/
       letter-spacing: 10px;
       /* background-color: white; */
       margin-left: 3%;
@@ -42,9 +42,9 @@ body {
       padding-top: 0px;
       border-width: 0px;
       width: 550px;
-      &:hover {
+      /*&:hover {
         color: #FAFAFA; 
-      }
+      }*/
       h1 {
         margin-bottom: 0px;
         margin-top: 0px;
@@ -120,40 +120,6 @@ body {
       }
     }
   } 
-}
-.background {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0;
-  z-index: 50;
-  display: none;
-}
-
-.lightbox {
-  position: absolute;
-  top: 20%;
-  left: 25%;
-  height: 400px;
-  width: 700px;
-  background-color: black;
-  border-radius: 3px;
-  z-index: 51;
-  display: none;
-}
-
-.close {
-  color: red;
-  float: right;
-  margin-right: 10px;
-  margin-top: -10px;
-  &:hover {
-    cursor: pointer;
-    color: gray;
-  }
 }
 
 /* Thumbnail Grid */

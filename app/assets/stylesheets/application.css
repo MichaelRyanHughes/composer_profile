@@ -10,5 +10,6 @@
  *
  *= require_self
  *= require magnific-popup
+ *= require works_stylesheet
  *= require_tree .
  */
