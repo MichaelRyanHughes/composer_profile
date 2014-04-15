@@ -3,7 +3,7 @@
     <div id="#{work.vimeo_id}" class="white-popup mfp-hide">
       <iframe src="//player.vimeo.com/video/#{work.vimeo_id}" width="700" height="526" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       h3
-        = work.name.downcase
+        = work.name.upcase
         span &#x25C6
     </div>
     .thumbnail 
