@@ -1,15 +1,15 @@
 /* works_stylesheet */
 @font-face {
   font-family: 'Fairview-Regular';
-  src:  url(font-path('fairview-regular-webfont.eot') + "?#iefix") format('embedded-opentype'),
-        url(font-path('fairview-regular-webfont.woff')) format('woff'),
-        url(font-path('fairview-regular-webfont.ttf')) format('truetype'),
-        url(font-path('fairview-regular-webfont.svg') + "#Fairview-Regular") format('svg');
+  src:  font-url(font-path('fairview-regular-webfont.eot') + "?#iefix") format('embedded-opentype'),
+        font-url(font-path('fairview-regular-webfont.woff')) format('woff'),
+        font-url(font-path('fairview-regular-webfont.ttf')) format('truetype'),
+        font-url(font-path('fairview-regular-webfont.svg') + "#Fairview-Regular") format('svg');
   font-family: 'GandhiSans-Regular';
-  src:  url(font-path('gandhisans-webfont.eot') + "?#iefix") format('embedded-opentype'),
-        url(font-path('gandhisans-regular-webfont.woff')) format('woff'),
-        url(font-path('gandhisans-regular-webfont.ttf')) format('truetype'),
-        url(font-path('gandhisans-regular-webfont.svg') + "#Fairview-Regular") format('svg');
+  src:  font-url(font-path('gandhisans-webfont.eot') + "?#iefix") format('embedded-opentype'),
+        font-url(font-path('gandhisans-regular-webfont.woff')) format('woff'),
+        font-url(font-path('gandhisans-regular-webfont.ttf')) format('truetype'),
+        font-url(font-path('gandhisans-regular-webfont.svg') + "#Fairview-Regular") format('svg');
 }
 
 html {

@@ -50,11 +50,3 @@ test:
   pool: 5
   username: procyon
   password:
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: composer_profile_production
-  pool: 5
-  username: procyon
-  password:
