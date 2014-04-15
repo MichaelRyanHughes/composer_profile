@@ -1,15 +1,22 @@
 /* works_stylesheet */
 @font-face {
-  font-family: 'Andale Mono';
-  src:  font-url(font-path('andale mono-webfont.eot') + "?#iefix") format('embedded-opentype'),
-        font-url(font-path('andale mono-webfont.woff')) format('woff'),
-        font-url(font-path('andale mono-webfont.ttf')) format('truetype'),
-        font-url(font-path('andale mono-webfont.svg') + "#andale mono") format('svg');
+  font-family: 'Canter';
+  src:  font-url(font-path('canter_bold_3d-webfont.eot') + "?#iefix") format('embedded-opentype'),
+        font-url(font-path('canter_bold_3d-webfont.woff')) format('woff'),
+        font-url(font-path('canter_bold_3d-webfont.ttf')) format('truetype'),
+        font-url(font-path('canter_bold_3d-webfont.svg') + "#canter_bold_3d") format('svg');
+  
   font-family: 'GandhiSans-Regular';
   src:  font-url(font-path('gandhisans-webfont.eot') + "?#iefix") format('embedded-opentype'),
         font-url(font-path('gandhisans-regular-webfont.woff')) format('woff'),
         font-url(font-path('gandhisans-regular-webfont.ttf')) format('truetype'),
-        font-url(font-path('gandhisans-regular-webfont.svg') + "#Fairview-Regular") format('svg');
+        font-url(font-path('gandhisans-regular-webfont.svg') + "#GandhiSans-Regular") format('svg');
+
+  font-family: 'Aileron';
+  src:  font-url(font-path('aileron-regular-webfont.eot') + "?#iefix") format('embedded-opentype'),
+        font-url(font-path('aileron-regular-regular-webfont.woff')) format('woff'),
+        font-url(font-path('aileron-regular-regular-webfont.ttf')) format('truetype'),
+        font-url(font-path('aileron-regular-regular-webfont.svg') + "#aileron-regular") format('svg');
 }
 
 html {
@@ -22,11 +29,11 @@ body {
   background-color: #DFDFDF;
   padding-top: 1px;
   .header {
-    font-family: Andale Mono;
+    font-family: Aileron;
     height: 100px;
     width: 100%;
     background-color: #DFDFDF;
-    padding-bottom: 26px;
+    padding-bottom: 30px;
     .name {
       color: #FF4D4D;
       /* transition: color .25s ease-in-out; */
@@ -41,7 +48,7 @@ body {
       padding-bottom: 0px;
       padding-top: 13px;
       border-width: 0px;
-      width: 582px;
+      width: 660px;
       /*&:hover {
         color: #FAFAFA; 
       }*/
@@ -240,7 +247,7 @@ h2 {
   margin: 20px auto;
   border-radius: 5px;
   h3 {
-    font-family: Andale Mono;
+    font-family: Aileron;
     font-size: 15px;
     letter-spacing: 4px;
     color: white;
