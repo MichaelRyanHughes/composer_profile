@@ -1,21 +1,21 @@
-    <div>
-      <% if user_signed_in? %>
-        Signed in as <%= current_user.email %>
-        <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-        <% else %>
-        <%= link_to "Sign in", new_user_session_path %>
-      <% end %>
-      </div>
-      <br>
-      <% @works.each do |work| %>
-      <div><b>Title:</b>  <%= work.name %></div>
-      <div><b>Vimeo URL:</b>  <%= work.url %></div>
-      <div><b>Vimeo ID:</b> <%= work.vimeo_id %></div>
-      <div><b>Db Id:</b>  <%= work.id %></div>
-      <div><b>Date Created:</b> <%= work.created_at %></div>
-      <%= link_to "Edit", edit_admin_path(work.id) %>
-      | <%= link_to "Delete", work_path(work.id), :method => :delete %>
-    <br></br>
-    <% end %>
-    <h3>Add Work</h3>
-    <%= render partial: 'form' %>
+<div>
+  <% if user_signed_in? %>
+    Signed in as <%= current_user.email %>
+    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+    <% else %>
+    <%= link_to "Sign in", new_user_session_path %>
+  <% end %>
+</div>
+  <br>
+  <% @works.each do |work| %>
+  <div><b>Title:</b>  <%= work.name %></div>
+  <div><b>Vimeo URL:</b>  <%= work.url %></div>
+  <div><b>Vimeo ID:</b> <%= work.vimeo_id %></div>
+  <div><b>Db Id:</b>  <%= work.id %></div>
+  <div><b>Date Created:</b> <%= work.created_at %></div>
+  <%= link_to "Edit", edit_admin_path(work.id) %>
+  | <%= link_to "Delete", work_path(work.id), :method => :delete %>
+<br></br>
+<% end %>
+<h3>Add Work</h3>
+<%= render partial: 'form' %>
