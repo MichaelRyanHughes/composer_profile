@@ -1,3 +1,5 @@
+@import "mixins/base";
+
 /* Thumbnail Grid */
 
 .grid {
@@ -13,7 +15,7 @@
   padding: 7px;
   border-style: solid;
   border-width: 1px;
-  border-color: #DBDBDB;
+  border-color: $darkGray;
   border-radius: 0%;
   background-color: white;
   overflow: hidden;
@@ -32,7 +34,7 @@
     transition: opacity .35s ease-in-out;
     -webkit-transition: opacity .35s ease-in-out;
     span {
-      color: #FF4D4D;
+      color: $red;
       padding-top: 2px;
       padding-left: 8px;
     }  

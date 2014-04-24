@@ -1,17 +1,20 @@
+@import "mixins/base";
+
+
 html {
-  background-color: #fdfdfd;
+  background-color: $offWhite;
 }
 
 /* Header */
 body {
   margin: 0px;
-  background-color: #DFDFDF;
+  background-color: $gray;
   padding-top: 1px;
   .header {
     font-family: Aileron, arial;
     height: 100px;
     width: 100%;
-    background-color: #DFDFDF;
+    background-color: $gray;
     padding-bottom: 30px;
     .name {
       color: #FF4D4D;
@@ -38,7 +41,7 @@ body {
       }
       h3 {
         font-family: GandhiSans-Regular, arial;
-        color: #FF5F5F;
+        color: $lightRed;
         margin-top: 0px;
         margin-bottom: 0px;
         letter-spacing: 5px;
@@ -51,15 +54,15 @@ body {
     font-family: arial;
     height: 30px;
     width: 100%;
-    background-color: #fdfdfd;
+    background-color: $offWhite;
     border-top-style: solid;
     border-left: none;
     border-right: none;
     border-top-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: #fdfdfd;
+    border-bottom-color: $offWhite;
     border-bottom-width: 1px;
-    border-top-color: #DBDBDB;
+    border-top-color: $darkGray;
     padding-bottom: 0px;
     margin-top: 0px;
     ul {
@@ -82,16 +85,16 @@ body {
           /*-webkit-transition: color .25s ease-in-out;*/
           text-decoration: none;
           padding: 6px 10px 10px 15px;
-          background-color: #fdfdfd;
+          background-color: $offWhite;
           /*transition: background-color .25s ease-in-out;
           -webkit-transition: background-color .25s ease-in-out;*/
           &:visited {
-            color: #AFAFAF;
+            color: $mediumGray;
             text-decoration: none;
           }
           &:hover {
             color: white;
-            background-color: #FF4D4D;
+            background-color: $red;
             /*border-style: solid;
             border-color: #FF4D4D;
             border-top-width: 7px;
