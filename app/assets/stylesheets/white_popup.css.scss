@@ -1,0 +1,24 @@
+/* magnific popup vid box */
+
+.white-popup {
+  position: relative;
+  background: black;
+  padding: 10px 10px 10px 10px;
+  width: auto;
+  max-width: 700px;
+  margin: 20px auto;
+  border-radius: 5px;
+  h3 {
+    font-family: Aileron, arial;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    span {
+      font-family: GandhiSans-Regular, arial;
+      font-size: 18px;
+      padding-left: 5px;
+      color: red;
+    }
+  }
+}

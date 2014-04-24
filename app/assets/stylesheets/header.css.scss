@@ -1,0 +1,110 @@
+html {
+  background-color: #fdfdfd;
+}
+
+/* Header */
+body {
+  margin: 0px;
+  background-color: #DFDFDF;
+  padding-top: 1px;
+  .header {
+    font-family: Aileron, arial;
+    height: 100px;
+    width: 100%;
+    background-color: #DFDFDF;
+    padding-bottom: 30px;
+    .name {
+      color: #FF4D4D;
+      /* transition: color .25s ease-in-out; */
+      /* -webkit-transition: color .25s ease-in-out; */
+      letter-spacing: 8px;
+      /* background-color: white; */
+      margin-left: 3%;
+      margin-bottom: 0px;
+      margin-top: 12px;
+      padding-left: 15px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-top: 13px;
+      border-width: 0px;
+      width: 660px;
+      /*&:hover {
+        color: #FAFAFA; 
+      }*/
+      h1 {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-size: 45px;
+      }
+      h3 {
+        font-family: GandhiSans-Regular, arial;
+        color: #FF5F5F;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        letter-spacing: 5px;
+        font-size: 16px;
+        font-weight: lighter;
+      }
+    }
+  }
+  .navcontainer {
+    font-family: arial;
+    height: 30px;
+    width: 100%;
+    background-color: #fdfdfd;
+    border-top-style: solid;
+    border-left: none;
+    border-right: none;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #fdfdfd;
+    border-bottom-width: 1px;
+    border-top-color: #DBDBDB;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    ul {
+      list-style: none;
+      letter-spacing: 6px;
+      margin-top: 0;
+      padding-top: 6px;
+      padding-left: 0px;
+      width: 100%;
+      li {
+        font-size: 12px;
+        width: 15%;
+        height: 25px;
+        display: inline-block;
+        text-align: center;
+        float: right;
+        a {
+          color: #AFAFAF;
+          /*transition: color .25s ease-in-out;
+          /*-webkit-transition: color .25s ease-in-out;*/
+          text-decoration: none;
+          padding: 6px 10px 10px 15px;
+          background-color: #fdfdfd;
+          /*transition: background-color .25s ease-in-out;
+          -webkit-transition: background-color .25s ease-in-out;*/
+          &:visited {
+            color: #AFAFAF;
+            text-decoration: none;
+          }
+          &:hover {
+            color: white;
+            background-color: #FF4D4D;
+            /*border-style: solid;
+            border-color: #FF4D4D;
+            border-top-width: 7px;
+            border-bottom-width: 8px;
+            border-left-width: 28px;
+            border-right-width: 28px;
+            transition: border 100ms;
+            -o-transition: border-bottom 100ms;
+            -moz-transition: border-bottom 100ms;
+            -webkit-transition: border 100ms;*/
+          }
+        }
+      }
+    }
+  } 
+}
